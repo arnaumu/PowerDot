@@ -18,17 +18,68 @@
 
 == Grup.
 
-Integrants: Arnau Muñoz
-
+Integrant: Arnau Muñoz
 
 == Definició del projecte.
 
-Contingut ...
+Aquest projecte es una aplicació desenvolupada principalment amb PHP. La finalitat del projecte es la de crear un sistema de presentació de diapositives en format web, es a dir, fer una cosa semblant al famós software de Microsoft anomenat Power Point. Entre altres coses, per desenvolupar el projecte hem utilitzat el MVC (Model, Vista i Controlador), MongoDB i Vagrant. 
 
-== Instruccions per a la instal·lació.
+== Funcionalitats del projecte.
 
-Contingut ...
+* Crear una presentació amb tres tipus de diapositiva mitjançant una entrada de text en un format semblant al ASCIDOC:
+* Els tres tipus de diapositives son:
+    - Diapositiva Portada: Conté un títol i un subtítol.
+    - Diapositiva Normal: Conté un títol, un subtítol i text.
+    - Diapositiva Normal: Conté un títol, un subtítol, text i una imatge.
+* Navegació entre les diapositives de la presentació, permet tirar endavant i cap a enredera.
+* Permet sortir en el moment que es vulgui de la presentació.
+* Guardar una presentació.
+* Veure les presentacions guardades per el usuari i veure les que estan guardades per altres usuaris.
+-Visualitzar qualsevol presentació que estigui guardada.
 
-== Memòria del projecte.
+== Cas d'ús no intuïtiu.
 
-Contingut ...
+Quan es vol crear una diapositiva de tipus imatge s'ha d’escriure el nom de la imatge de las següent forma.
+
+*car.png
+
+S'ha de posar la extensió de la imatge i només es poden cridar a les imatges ubicades a la carpeta del projecte anomenada pictures.
+
+En el projecte hi han dos imatges carregades car.png i php.jpg. Si es vol provar amb més imatges s’hauran d'afegir en aquesta carpeta.
+
+== Dificultats trobades i solucions.
+
+He tingut dificultats en la part de MongoDB, sobretot en la part de configuració d'aquest mateix. 
+
+En la documentació oficial sortia que havia de posar en el php.ini la següent línia:
+
+* extension=php_mongo.dll
+
+Posant-ho així no hem detectava el mòdul de MongoDB, finalment, per tal de que m'ho detectes ho he hagut de posar això
+
+* extension=mongodb
+
+== Bugs trobats i no arreglats.
+
+Faltaria tenir la opció de no posar subtítols en algunes diapositives.
+
+== Requisits no implementats i explicació de perquè no s’han implementat.
+
+Falta la validació del correcte funcionament del text de diapositiva insertat.
+Falten també la majoria de les parts estètiques del sprint #3 i tampoc es poden filtrar les presentacions guardades.
+No s'ha pogut implementar tot això per falta de temps i d'organització pròpia.
+
+== Ampliacions i millores realitzades.
+
+En la pàgina de referència hi ha un botó que copia automàticament un exemple d'entrada de text de creació de presentació.
+
+== Conclusió
+
+He realitzar aquest projecte amb pocs dies degut a la meva mala organització, no obstant he après molt en quant a PHP, llenguatge que hem sembla una mica caòtic. També he après a gestionar MongoDB el qual mai l'havia tocat, m'ha semblat més fàcil del que pensava tret de la instal·lació, que m'ha donat algun petit problema.
+
+== Referències
+* https://www.php.net/manual/es/set.mongodb.php
+* https://www.mongodb.com/docs/manual/
+* https://www.php.net/manual/es/index.php
+* https://www.vagrantup.com/docs
+* https://www.w3schools.com/php/default.asp
