@@ -1,0 +1,34 @@
+:toc-title: Taula de continguts
+:figure-caption: Figura
+:table-caption: Taula
+:example-caption: Exemple
+:author: Arnau Muñoz
+:email: munoz.rocosa.arnau@alumnat.copernic.cat
+:revdate: Desembre 07, 2022
+:revnumber: 1.0
+:doctype: book
+:encoding: utf-8
+:lang: ca
+:toc: left
+:toclevels: 4
+:sectnums:
+:icons: font
+
+= __PowerDot Read Me__
+
+== Grup.
+
+Integrants: Arnau Muñoz
+
+
+== Definició del projecte.
+
+Contingut ...
+
+== Instruccions per a la instal·lació.
+
+Contingut ...
+
+== Memòria del projecte.
+
+Contingut ...

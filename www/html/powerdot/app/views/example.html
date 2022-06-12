@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Power Dot</title>
+</head>
+
+<body>
+    <div class="divPrincipal">
+        <div class="div1Titol">
+            <h1>Format Example</h1>
+        </div>
+        <hr class="rounded">
+        <p>
+            <a href="mainView.php">Back to main page</a>
+        </p>
+        <div>
+            <textarea disabled rows="5" cols="100" class="textAreaExample" id="txtAreaExample">
+= Title 1
+== Subheader 1
+[cover]
+
+>>>
+
+= Title 2
+== Subheader 2
+/Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+[normal]
+
+>>>
+
+= Title 3
+== Subheader 3
+/Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+*car.png
+[image]
+
+>>>
+            </textarea>
+        </div>
+
+        <div class="tooltip">
+            <a onclick="myFunction()">
+                Copiar
+                <span class="tooltiptext" id="myTooltip">
+                    Click per copiar text
+                </span>
+            </a>
+        </div>
+
+        <script>
+            function myFunction() {
+                var copyText = document.getElementById("txtAreaExample");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999);
+                navigator.clipboard.writeText(copyText.value);
+                var tooltip = document.getElementById("myTooltip");
+                tooltip.innerHTML = "Text d'exemple copiat!";
+            }
+        </script>
+    </div>
+
+</body>
+
+</html>
